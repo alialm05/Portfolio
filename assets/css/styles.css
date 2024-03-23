@@ -1,25 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Nunito:bold');
+@import url('https://fonts.googleapis.com/css?family=Karla|Karla:bold');
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Karla", sans-serf;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
+  --bg-color: #2f2da5a8;
+  --bg-color0: #2f2da5ce;
+  --bg-color2: #2f2da546;
+  --primary-color: #ffffff;
+  --secondary-color: #d11616;
+  --primary-shadow: #192183;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
+  --boxShadow1: rgba(25, 34, 131, 0.397);
+  --boxShadow2: rgba(0, 0, 0, 0.281);
+  --borderColor1: rgba(0, 0, 0, 0.89);
 }
 /* Variables end */
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--bg-color0);
+  background: linear-gradient(var(--bg-color), var(--bg-color0) );
 }
 
 /* CSS Resets */
@@ -37,6 +46,10 @@ ul {
 a {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
 }
 
 a:hover {
@@ -63,9 +76,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3.5rem;
+  padding: .75rem 3rem;
   background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  /*border-bottom: 2px solid rgb(0, 0, 0);
+  /*box-shadow: 0px 4px 0px rgba(25, 34, 131, 0.397);*/
+  
+  
 }
 
 nav h1 {
@@ -76,18 +92,24 @@ nav a {
   color: var(--primary-color);
   transition: var(--transition);
 }
-nav a:hover {
+nav li:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
 
 nav ul {
-  display: flex;
+  display: flex; /* makes the buttons list horizontally */
   gap: 1.9rem;
 }
 
-nav ul li {
-  font-weight: var(--bold-font);
+nav img{
+  margin: 0;
+  padding: 0;
+}
+
+nav img:hover{
+  color: var(--secondary-color);
+  /* background: url("../icons/githubBlack.png") no-repeat; */
 }
 
 .burger-menu {
@@ -101,69 +123,139 @@ nav ul li {
 /* Navbar ends */
 
 /* Hero section */
-.hero {
+.about {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  max-width: 68.75rem;
+  gap: 4.5rem;
+  max-width: 67.75rem;
   margin: auto;
+  margin-bottom: 5%;
 }
 
-.hero img {
+.about img {
   height: 37.5rem;
-  width: 37.5rem;
+  width: 30.5rem;
+  border-radius: 2%;
+  border: 3px solid var(--borderColor1);
+  box-shadow: 10px 10px 0px var(--boxShadow2);
+  margin-top: 5%;
+  padding: -0.325rem;
+  transition: var(--transition);
+  transform: scale(1);
+  
 }
 
-.bio {
+.about img:hover{
+  height: 38.5rem;
+  width: 31.5rem;
+  padding: 0rem;
+  border-radius: 0%;
+
+}
+
+.about div {
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  border: 3px solid var(--borderColor1);
+  box-shadow: 8px 8px 0px var(--boxShadow2);
+  transition: var(--transition);
+  background-color: var(--bg-color2);
 }
 
-.bio h1 {
-  margin-bottom: var(--bottom-margin);
+.about div:hover{
+  width: 28.5rem;
+  padding: 1.5rem;
+  border-radius: 0%;
 }
 
-.bio p {
+.about h2 {
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.about p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
+  color: #fff;
 }
 /* Hero section ends */
 
 /* More about */
 .more-about {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color2);
   padding: 1rem 6rem;
+  margin-top: 4%;
+  border-radius: 1%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  color: #fff;
 }
 
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+  color: #fff;
 }
 /* More about ends */
 
 /* Skills section */
 .skills {
-  max-width: 68.75rem;
+  background-color: var(--bg-color2);
+  padding: 1rem 6rem;
+  margin-top: 4%;
+  border-radius: 1%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+ 
+  /*max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 2.5rem;*/
 }
 
-.skill-header {
-  margin-bottom: 1rem;
+.skills div{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+}
+
+.skills {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+  color: #fff;
+  background-color: var(--bg-color2);
+  padding: 1rem 6rem;
+  margin-top: 4%;
+  border-radius: 1%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /*margin-bottom: 1rem;*/
+}
+
+.skill-title {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  color: #fff;
+  text-align: center;
+
 }
 
 .skills-wrapper img {
   padding: 1.25rem;
 }
+
+
 
 .icon {
   width: 11.875rem;
@@ -216,12 +308,45 @@ nav ul li {
 
 /* Contacts section */
 .contact {
-  margin-top: 2rem;
+  background-color: var(--bg-color2);
+  padding: 1rem 6rem;
+  margin-top: 4%;
+  border-radius: 1%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /*margin-top: 2rem;*/
 }
+.contact p {
+  line-height: var(--line-height);
+  text-align: center;
+
+  padding: 0.4rem;
+  color: #fff;
+}
+
+.websites {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 1.4rem;
+  color: #fff;
+}
+
+.websites a {
+  align-items: center;
+  padding: 2.5rem;
+  color: #fff;
+}
+
 
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  color: #fff;
 }
 
 .contact-form-container {
