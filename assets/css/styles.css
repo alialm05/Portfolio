@@ -15,13 +15,22 @@
   --secondary-color: #d11616;
   --primary-shadow: #192183;
   --secondary-shadow: #a17a69;
-  --bottom-margin: 0.5rem;
+  --bottom-margin: 0.75rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
   --boxShadow1: rgba(25, 34, 131, 0.397);
   --boxShadow2: rgba(0, 0, 0, 0.281);
   --borderColor1: rgba(0, 0, 0, 0.89);
+
+  --spacing-medium: 1rem;
+  --spacing-large: 1.1875rem;
+  --border-radius-default: 0.5rem;
+  --color-borders-hairline: #2f2da5a8;
+
+  --color-borders-highlight: #2f2da5ce;
+  --color-highlight: rgb(255, 255, 255);
+
 }
 /* Variables end */
 
@@ -30,6 +39,7 @@ html {
   background-color: var(--bg-color0);
   background: linear-gradient(var(--bg-color), var(--bg-color0) );
 }
+
 
 /* CSS Resets */
 * {
@@ -80,7 +90,8 @@ nav {
   background-color: var(--bg-color);
   /*border-bottom: 2px solid rgb(0, 0, 0);
   /*box-shadow: 0px 4px 0px rgba(25, 34, 131, 0.397);*/
-  
+  scroll-behavior: smooth;
+
   
 }
 
@@ -91,6 +102,8 @@ nav h1 {
 nav a {
   color: var(--primary-color);
   transition: var(--transition);
+  scroll-behavior: smooth;
+
 }
 nav li:hover {
   color: var(--secondary-color);
@@ -130,7 +143,9 @@ nav img:hover{
   gap: 4.5rem;
   max-width: 67.75rem;
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
+  scroll-behavior: smooth;
+
 }
 
 .about img {
@@ -203,6 +218,8 @@ nav img:hover{
   line-height: var(--line-height);
   padding: 0.4rem;
   color: #fff;
+  text-align: center;
+  margin: 2rem;
 }
 /* More about ends */
 
@@ -220,6 +237,19 @@ nav img:hover{
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;*/
+}
+
+.skills h1 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+  color: #fff;
+  padding: 1rem 6rem;
+  border-radius: 1%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .skills div{
@@ -248,6 +278,7 @@ nav img:hover{
   padding: 0.4rem;
   color: #fff;
   text-align: center;
+  font-size: large;
 
 }
 
@@ -270,38 +301,90 @@ nav img:hover{
   margin-top: 2rem;
 }
 
+.projects h2{
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  color: #fff;
+  text-align: center;
+  margin: 2rem;
+}
+
 .project-pic {
   width: 65%;
   height: 60%;
 }
 
 .projects-container {
-  display: flex;
+  margin: auto;
   align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+
+}
+
+
+.project-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  
+  align-content: center;
+  display: grid;
   justify-content: center;
 }
 
-.projects-title {
+.project-item{
+  background: var(--bg-color);
+  border: solid 2px black;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: auto;
+
+  padding-block-start: var(--spacing-medium);
+  padding-block-end: var(--spacing-medium);
+  padding-inline-start: var(--spacing-large);
+  padding-inline-end: var(--spacing-large);
+  border-radius: var(--border-radius-default);
+}
+
+.project-item a{
+  padding: 0rem;
+  margin: auto;
+  height: fit-content;
+}
+
+.project-item:hover{
+  width: 90%;
+  height: 90%;
+  transition: var(--transition);
+  transform: scale(1);
+}
+
+.project-content {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #ffffffb0;
+  font-size: small;
+  align-content: center;
+  display: grid;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
-.project-container {
+.project-text {
+  margin-bottom: var(--bottom-margin);
+  color: #ffffffb0;
+  font-size: small;
+  align-content: center;
+  display: grid;
+  justify-content: center;
   text-align: center;
-  width: 21.875rem;
-  padding: 1rem;
-}
-
-.project-container p {
-  padding: 0.4rem;
-}
-
-.project-title {
-  margin-bottom: var(--bottom-margin);
-}
-
-.project-details {
-  margin-bottom: var(--bottom-margin);
 }
 
 /* Projects section ends */
@@ -324,6 +407,8 @@ nav img:hover{
   padding: 0.4rem;
   color: #fff;
 }
+
+
 
 .websites {
   display: flex;
