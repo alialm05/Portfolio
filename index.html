@@ -31,7 +31,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="desktop-nav">
       <h1>Ali Almaamouri</h1>
 
       <ul class="navigation">
@@ -50,48 +50,83 @@
 
       </ul>
 
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
+    </nav>
+
+    <nav id="hamburger-nav">
+
+      <div class="hamburger-icon">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      </div>
+
+      <div class="hamburger-menu">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>  
+      </div>
 
     </nav>
-   
+
 
     <section class="about" id="about">
+
+      <h1>
+        Hey, I'm Ali! 👋
+      </h1>
+
 
       <img
       src="assets/icons/me1.JPG"
       class="picture">
 
-      <div class="about-section">
-        <h2 class="aboutTitle">
-          About Me
-        </h2>
-        <p class="aboutText">
-          My name is Ali Almaamouri, I am a undergraduate student at the University of Windsor Studying Computer Science!
-          I am also a game developer and make bots for fun, as well as other types of software!
-        </p>
-      </div>
-
+      <!--
+        <div class="about-section">
+          <h2 class="aboutTitle">
+            About Me
+          </h2>
+          <p class="aboutText">
+            My name is Ali Almaamouri, I am a undergraduate student at the University of Windsor Studying Computer Science!
+            I find problem solving and creating new software enjoyable, especially when it comes to web and game development.
+            I am always looking for new opportunities to learn and grow as a developer.
+          </p>
+        </div>
+      -->
+        
     </section>
 
     <section class="more-about">
       <h2>
-        More About Me
+        About Me
         </h2>
 
         <p>
           I Participated in my highschool Robotics team in Kennedy Collegiate Institute
           and took the role of being the robot programmer in 2022 to 2023.<br/>
-          I currently volunteer for the UWindsor Computer Science Society where I maintain the CSS website and discord bot.
+          A Computer science student exploring the world of game and software development, I enjoy problem solving and recreating my ideas with code! I have a passion for learning new things and collaborating with others towards a common goal so feel free to shoot me a message.
+
+          Currently as a University of Windsor student, 
+          I am part of the Developer Team of the Computer Science Society club (CSS) 
+          where I maintain and implement features on our main website,
+          used by thousands of students in the computer science program.
+          I also had an opportunity to work with Glendor, where 
+          I was able visualize MRI scans on 3D software platforms like 
+          Unity, as well as on the web using packages like Three.js for 3D rendering.
+          
           </p>
 
-          <h2 class="resume-link">
-            <a href="./assets/Resume_2024 EM.pdf" rel="noopener" target="_blank"> 
-              View My Resume 📄
-            </a>
-          </h2>
+          <!--
+            <h2 class="resume-link">
+              <a href="./assets/Resume_2024 EM.pdf" rel="noopener" target="_blank"> 
+                View My Resume 📄
+              </a>
+            </h2>
+          -->
 
     </section>
 
@@ -142,42 +177,92 @@
 
     <section class="projects" id="projects">
       <h2>Projects</h2>
+
+      <ul class="project-list">
+        <li>
+          <div class="project-item">
+            <a href="https://github.com/alialm05/YouTube-Downloader-App" rel="noopener" target="_blank">
+            <h3 class="project-title">
+                Youtube Downloader
+            </h3>
+  
+            <p class="project-text">
+              Helpful Program that lets you download videos from YouTube.
+            </p>
+            </a>
+
+            <ul class="tech-list">
+              <li class="Python">Python</li>
+            </ul>
+
+          </div>
+        </li>
+
+        <li>
+        
+          <div class="project-item">
+            <a href="https://movies2watch-gamma.vercel.app/" rel="noopener" target="_blank">
+            
+              <h3 class="project-title">
+                  Movies 2 Watch
+              </h3>
+              
+                <p class="project-text">
+                  A website to search from over 900,000+ Movies 
+                </p>
+
+                
+                
+            </a>
+            
+            <ul class="tech-list">
+              <li class="MongoDB">MongoDB</li>
+              <li class="Expressjs">Express.js</li>
+              <li class="React">React</li>
+              <li class="Nodejs">Node.js</li>
+              <li class="Nodejs">Node.js</li>
+              <li class="Nodejs">Node.js</li>
+              <li class="Nodejs">Node.js</li>
+            </ul>
+
+          </div>
+          
+        </li>
+
+        
+        <li>
+        
+          <div class="project-item">
+            <a href="https://github.com/alialm05/ReactiveChat" rel="noopener" target="_blank">
+            <h3 class="project-title">
+                  Reactive Chat
+            </h3>
+  
+              <p class="project-text">
+                Real-time global chat platform.
+              </p>
+            </a>
+
+            <ul class="tech-list">
+              <li class="React">React</li>
+              <li class="Firebase">Firebase</li>
+            </ul>
+            
+
+          </div>
+    
+        </li>
+        
+      </ul>
+
       <div class="projects-container">
         
         
-        <div class="project-item">
-          <a href="https://movies2watch-gamma.vercel.app/" rel="noopener" target="_blank">
-          
-            <h3 class="project-title">
-                Movies 2 Watch
-            </h3>
-            
-            <div class="project-content">
-              <p class="project-text">
-                A website to search from over 900,000+ Movies 
-              </p>
-            </div>
-          
-          </a>
-        </div>
-        
-        
-        <div class="project-item">
-          <a href="https://github.com/alialm05/ReactiveChat" rel="noopener" target="_blank">
-          <h3 class="project-title">
-                Reactive Chat
-          </h3>
+     
 
-          <div class="project-content">
-            <p class="project-text">
-              Real-time global chat platform.
-            </p>
-          </div>
-          </a>
-        </div>
-
+        <!--
         
-        
+           
         <div class="project-item">
           <a href="https://quran-bot-three.vercel.app/" rel="noopener" target="_blank">
           <h3 class="project-title">
@@ -192,7 +277,6 @@
           </a>
         </div>
 
-        
         <div class="project-item">
           <a href="https://github.com/alialm05/YouTube-Downloader-App" rel="noopener" target="_blank">
           <h3 class="project-title">
@@ -236,6 +320,8 @@
         </div>
           </a>
         </div>
+
+        -->
 
 
       </div>
