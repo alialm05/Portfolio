@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -22,14 +23,22 @@
     />
 
     <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    
+    
     <title>Ali's Portfolio</title>
   </head>
 
   <body>
+
+    <!-- script -->
+     <script src="./assets/js/script.js"></script>
+
     <!-- Navbar -->
     <nav id="desktop-nav">
       <h1>Ali Almaamouri</h1>
@@ -53,8 +62,7 @@
     </nav>
 
     <nav id="hamburger-nav">
-
-      <div class="hamburger-icon">
+      <div class="hamburger-icon" onclick="toggleMenu()">
           <div>
             <span></span>
             <span></span>
@@ -76,14 +84,14 @@
 
     <section class="about" id="about">
 
-      <h1>
+      <h1 data-aos="fade-up">
         Hey, I'm Ali! 👋
       </h1>
 
-
-      <img
-      src="assets/icons/me1.JPG"
-      class="picture">
+        <img
+        src="assets/icons/me1.JPG"
+        class="picture"
+        >
 
       <!--
         <div class="about-section">
@@ -100,7 +108,7 @@
         
     </section>
 
-    <section class="more-about">
+    <section class="more-about"  data-aos="fade-up">
       <h2>
         About Me
         </h2>
@@ -130,8 +138,9 @@
     </section>
 
     <section class="skills" id="skills">
-      <h1>Skills</h1>
-      <div>
+      <h2 data-aos="fade-up">Skills</h2>
+
+      <div data-aos="fade-up">
         <h2 class="skill-title">
           Languages
         </h2>
@@ -141,7 +150,7 @@
           </p>
       </div>
 
-      <div>
+      <div data-aos="fade-up">
         <h2 class="skill-title">
           Frameworks
         </h2>
@@ -151,7 +160,7 @@
           </p>
       </div>    
 
-      <div>
+      <div data-aos="fade-up">
         <h2 class="skill-title">
           Libraries and API's
         </h2>
@@ -161,7 +170,7 @@
           </p>
       </div>    
 
-      <div>
+      <div data-aos="fade-up">
         <h2 class="skill-title">
           Developer Tools
         </h2>
@@ -178,7 +187,7 @@
       <h2>Projects</h2>
 
       <ul class="project-list">
-        <li>
+        <li  data-aos="fade-up">
           <div class="project-item">
             <a href="https://github.com/alialm05/YouTube-Downloader-App" rel="noopener" target="_blank">
             <h3 class="project-title">
@@ -197,7 +206,7 @@
           </div>
         </li>
 
-        <li>
+        <li data-aos="fade-up">
         
           <div class="project-item">
             <a href="https://movies-2-watch-frontend.vercel.app/" rel="noopener" target="_blank">
@@ -216,17 +225,15 @@
               <li class="MongoDB">MongoDB</li>
               <li class="Expressjs">Express.js</li>
               <li class="React">React</li>
-            </ul>
-            <!--<div class="tech-list-holder"> 
-            </div>
-          -->
+              <li class="Nodejs">Node.js</li>
 
+            </ul>
           </div>
           
         </li>
 
         
-        <li>
+        <li data-aos="fade-up">
         
           <div class="project-item">
             <a href="https://github.com/alialm05/ReactiveChat" rel="noopener" target="_blank">
@@ -323,7 +330,7 @@
       
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-up">
 
 
       <h2>
@@ -356,6 +363,14 @@
         </div>
 
     </section>
+
+
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 
