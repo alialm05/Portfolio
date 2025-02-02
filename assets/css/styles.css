@@ -167,7 +167,7 @@ nav img:hover{
 .about img {
   
   height: 55vh;
-  width: 50vh;
+  width: 55vh;
 
   border-radius: 25%;
   border: 15px solid rgb(255, 255, 255);
@@ -249,26 +249,6 @@ nav img:hover{
 /* More about ends */
 
 
-.skills h1 {
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
-  color: #fff;
-  padding: 1rem 6rem;
-  border-radius: 1%;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.skills div{
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-
-}
-
 .skills {
   margin-bottom: var(--bottom-margin);
   text-align: center;
@@ -287,6 +267,52 @@ nav img:hover{
   margin-top: 10%;
 
   /*margin-bottom: 1rem;*/
+
+  div{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+    color: #fff;
+    padding: 1rem 6rem;
+    border-radius: 1%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  li {
+    margin-left: .5rem;
+    margin-right: .5rem;  
+  }
+
+}
+
+
+.languages {
+  
+
+  img {
+    max-width: 50px;
+    max-height: 60px;
+  }
+
+
 }
 
 .skill-title {
@@ -698,6 +724,30 @@ nav img:hover{
     height: 45vh;
     width: 40vh;
   }
+
+  .skills {
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: .5rem;
+      padding: 1rem;
+    }
+  
+    li {
+      margin-left: .2rem;
+      margin-right: .2rem;  
+    }
+  
+    img {
+      max-width: 20px;
+      max-height: 20px;
+    }  
+  
+  }
+
 
   .project-list {
     grid-template-columns: repeat(1, 1fr);
