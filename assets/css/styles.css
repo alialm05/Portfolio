@@ -230,7 +230,6 @@ nav img:hover{
   padding-top: 8%;
   padding-bottom: 8%;
   margin-top: 10%;
-
 }
 
 .more-about h2 {
@@ -241,10 +240,10 @@ nav img:hover{
 
 .more-about p {
   line-height: var(--line-height);
-  padding: 0.4rem;
+  padding: 0;
   color: #fff;
-  text-align: center;
-  margin: 2rem;
+  text-align: left;
+  margin: 0;
 }
 /* More about ends */
 
@@ -636,6 +635,7 @@ nav img:hover{
 /* Media queries for responsiveness */
 @media screen and (max-width: 720px) {
 
+
   #desktop-nav {
     display: none;
   }
@@ -721,7 +721,7 @@ nav img:hover{
   }
 
   .about img {
-    height: 45vh;
+    height: 40vh;
     width: 40vh;
   }
 
@@ -742,7 +742,7 @@ nav img:hover{
     }
   
     img {
-      max-width: 20px;
+      max-width: 18px;
       max-height: 20px;
     }  
   
@@ -772,7 +772,7 @@ nav img:hover{
   }
 
   .more-about p {
-    text-align: justify;
+    text-align: left;
   }
 
 
