@@ -190,6 +190,7 @@ nav img:hover{
   vertical-align: middle;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 4.5rem;
   margin: auto;
