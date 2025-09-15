@@ -638,6 +638,9 @@ nav img:hover{
   justify-content: center;
   text-align: center;
   margin: 1rem;
+
+
+
   p {
     font-size: 1.125rem;
     line-height: var(--line-height);
@@ -653,7 +656,24 @@ nav img:hover{
     padding: 0.4rem;
     color: #fff;
   }
+
+  .blog-post-date {
+    font-size: 0.875rem;
+    color: #aaa;
+  }
+
+  
+  .blog-post-content p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0.4rem;
+    color: #fff;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
 }
+
 
 .small-video{
   width: 65vw;
