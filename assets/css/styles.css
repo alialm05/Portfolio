@@ -675,9 +675,13 @@ nav img:hover{
 }
 
 
-.small-video{
-  width: 65vw;
-  height: 75vh;
+.small-video {
+  width: 100%;
+  max-width: 500px;   /* or any max width you prefer */
+  height: auto;
+  max-height: 60vh;   /* keeps it from getting too tall */
+  display: block;
+  margin: 2rem auto;  /* centers the video */
 }
 
 /* Media queries for responsiveness */
@@ -839,5 +843,10 @@ nav img:hover{
 
   .contact-form-container {
     max-width: 23.75rem;
+  }
+
+  .small-video {
+    max-width: 95vw;
+    max-height: 40vh;
   }
 }
