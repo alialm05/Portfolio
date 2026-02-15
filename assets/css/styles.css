@@ -298,7 +298,26 @@ nav img:hover{
 
   li {
     margin-left: .5rem;
-    margin-right: .5rem;  
+    margin-right: .5rem; 
+
+    img {
+      width: clamp(32px, 6vw, 50px);
+      height: auto;
+      max-height: 50px;
+      display: block;
+      transition: var(--transition);
+      transform: scale(1);
+      
+  
+      &:hover {
+        transition: var(--transition);
+        transform: scale(1.2);
+      }
+    }
+
+
+
+
   }
 
 }
@@ -816,7 +835,7 @@ iframe {
     opacity: 1;
   }
   
-  .hamburger-iconspan:last-child{
+  .hamburger-icon span:last-child{
     transition: var(--transition);
     transform: none;
   }
@@ -845,12 +864,15 @@ iframe {
   
     li {
       margin-left: .2rem;
-      margin-right: .2rem;  
+      margin-right: .2rem;
+
     }
   
     img {
       max-width: 18px;
       max-height: 20px;
+
+      
     }  
   
   }
