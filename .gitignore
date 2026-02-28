@@ -1,1 +1,8 @@
 test.html
+/resumes/
+
+.vscode/
+.idea/
+
+node_modules/
+.env
