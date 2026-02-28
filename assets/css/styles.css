@@ -5,7 +5,7 @@
 /* Keyframe Animations */
 @keyframes skill-pulse {
   0%, 100% { transform: scale(1); }
-  50%       { transform: scale(1.12); }
+  50%       { transform: scale(1.15); }
 }
 /* Keyframe Animations end */
 
@@ -318,7 +318,7 @@ nav img:hover{
       height: auto;
       max-height: 50px;
       display: block;
-      animation: skill-pulse 2.4s ease-in-out infinite;
+      animation: skill-pulse 2s ease-in-out infinite;
 
           
     }
