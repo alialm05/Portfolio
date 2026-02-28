@@ -5,3 +5,4 @@ function toggleMenu(){
     hamburgerMenu.classList.toggle("show");
     hamburgerIcon.classList.toggle("show");
 }
+
